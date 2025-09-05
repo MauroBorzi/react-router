@@ -1,0 +1,29 @@
+header {
+  background-color: #010f2f;
+}
+
+.text-green {
+  color: #00ed67;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header ul li a :hover {
+  color: #00ed67;
+}
+
+header ul li a.active {
+  color: #00ed67;
+}
+
+.padding {
+  padding-top: 15px;
+}
+
+.card img {
+  height: 300px;
+  object-fit: contain;
+}
