@@ -1,6 +1,6 @@
 # react-router
 
-### Consegna
+### Consegna 1
 
 Creiamo il frontend del nostro mini e-commerce e le sue pagine principali!
 Useremo Fake Store API come backend fittizio per simulare i dati dei prodotti.
@@ -20,3 +20,19 @@ https://fakestoreapi.com/
 
 Centralizziamo la Navbar usando un componente Layout
 Gestiamo la classe active per i link attivi nella Navbar
+
+
+### Consegna 2
+
+Completiamo il nostro routing aggiungendo la pagina di dettaglio prodotto!
+
+#### Obiettivi
+
+- Nella pagina Prodotti, ogni prodotto deve essere cliccabile (usa <Link>)
+- Aggiungiamo la pagina di dettaglio per ogni prodotto, con le informazioni prese da https://fakestoreapi.com/products/:id
+- Configuriamo il routing dinamico per leggere l’id del prodotto dalla URL
+
+#### Bonus
+
+Aggiungiamo nella pagina di dettaglio dei pulsanti per navigare al prodotto precedente o successivo (usando useNavigate() programmaticamente)
+
