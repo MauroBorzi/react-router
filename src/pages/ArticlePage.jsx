@@ -24,15 +24,11 @@ const ArticlePage = () => {
               <div className="card h-100">
                 <img src={image} className="card-img-top" alt="..." />
                 <div className="card-body">
+                  <div className="text-center m-3">
+                    <Link to={`/articles/${id}`} className="btn btn-success">SHEDA ARTICOLO</Link>
+                  </div>
                   <h5 className="card-title">{title}</h5>
-                  <p className="card-text">{description}</p>
                 </div>
-                <ul className="list-group list-group-flush">
-                  <li className="list-group-item">{category}</li>
-                  <li className="list-group-item">{price}</li>
-                  <li className="list-group-item text-center"><Link to={`/articles/${id}`} className="btn btn-success">SHEDA ARTICOLO</Link></li>
-
-                </ul>
               </div>
             </div>
           )
