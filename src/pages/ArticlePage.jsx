@@ -30,7 +30,7 @@ const ArticlePage = () => {
                 <ul className="list-group list-group-flush">
                   <li className="list-group-item">{category}</li>
                   <li className="list-group-item">{price}</li>
-                  <li className="list-group-item text-center"><Link className="btn btn-success">SHEDA ARTICOLO</Link></li>
+                  <li className="list-group-item text-center"><Link to={`/articles/${id}`} className="btn btn-success">SHEDA ARTICOLO</Link></li>
 
                 </ul>
               </div>
