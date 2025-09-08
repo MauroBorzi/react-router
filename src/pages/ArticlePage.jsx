@@ -1,17 +1,21 @@
 import axios from "axios"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ArticlePage = () => {
 
   const [fromData, setFromData] = useState([])
 
-  axios.get('https://fakestoreapi.com/products')
-    .then(response => setFromData(response.data));
+  useEffect(() => {
+    axios.get('https://fakestoreapi.com/products')
+      .then(response => setFromData(response.data));
+  }, [])
 
   return (
     <div className="container py-5">
       <div className="row gy-4">
-
+        <div className="col-12">
+          <h1 className="text-center text-green">ARTICOLI</h1>
+        </div>
         {fromData.map(art => {
           const { category, id, description, image, price, title } = art
 
