@@ -1,5 +1,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const ArticlePage = () => {
 
@@ -18,7 +19,6 @@ const ArticlePage = () => {
         </div>
         {fromData.map(art => {
           const { category, id, description, image, price, title } = art
-
           return (
             <div className="col-12 col-md-4 col-lg-3" key={id}>
               <div className="card h-100">
@@ -30,14 +30,15 @@ const ArticlePage = () => {
                 <ul className="list-group list-group-flush">
                   <li className="list-group-item">{category}</li>
                   <li className="list-group-item">{price}</li>
+                  <li className="list-group-item text-center"><Link className="btn btn-success">SHEDA ARTICOLO</Link></li>
+
                 </ul>
               </div>
             </div>
           )
         })}
-
       </div>
-    </div>
+    </div >
   )
 }
 
