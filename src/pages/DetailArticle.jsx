@@ -28,7 +28,7 @@ const DetailArticle = () => {
               <li className="list-group-item">{article.category}</li>
               <li className="list-group-item">{article.price + "€"}</li>
               <li className="list-group-item text-center m-2">
-                <button type="button" class="btn btn-success me-3" onClick={() => navigate(`/articles/${parseInt(id) - 1}`)} disabled={id === 1 ? true : false}>
+                <button type="button" class="btn btn-success me-3" onClick={() => navigate(`/articles/${parseInt(id) - 1}`)} disabled={parseInt(id) === 1 ? true : false}>
                   PRECEDENTE
                 </button>
                 <Link to={`/articles`} className="btn btn-success me-3">
